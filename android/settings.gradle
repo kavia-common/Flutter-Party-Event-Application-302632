@@ -1,7 +1,0 @@
-def ktsSettings = file('settings.gradle.kts')
-if (ktsSettings.exists()) {
-    // Delegate to Kotlin DSL settings for modern Flutter/Gradle integration.
-    apply from: ktsSettings
-} else {
-    include ':app'
-}
