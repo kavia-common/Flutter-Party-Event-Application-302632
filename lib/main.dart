@@ -31,7 +31,9 @@ class MyApp extends StatelessWidget {
       // Default/home screen:
       home: const FindEvent(),
 
-      // Minimal route map for future navigation, keeping FindEvent as default.
+      // Named routes:
+      // - '/find' -> FindEvent (explicit deep-linkable route)
+      // Note: `home` takes precedence on launch; keep it to guarantee FindEvent renders in previews.
       routes: <String, WidgetBuilder>{
         '/find': (_) => const FindEvent(),
       },
